@@ -1,6 +1,5 @@
 
 import AboutMe from "@/components/ui/About";
-import Projects from "@/components/ui/Projects";
 import Sidebar from "@/components/ui/Sidebar";
 import Navbar from "@/pages/Header/Navbar";
 import Greeting from "@/pages/Hero/Hero";
@@ -11,9 +10,9 @@ export default function Index() {
       <Navbar/>
       <Greeting />
       <Skills />
-      <Sidebar/>
+      {/* <Sidebar/> */}
       <AboutMe/>
-      <Projects/>
+      {/* <Projects/> */}
     </main>
   );
 }

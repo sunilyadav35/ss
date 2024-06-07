@@ -4,7 +4,8 @@ import React from "react";
 import "./Skills.css";
 import { Fade } from "react-awesome-reveal";
 import Image from 'next/image'; // If using Next.js, you can use next/image for optimized images
-import developerActivity from '../../../public/images/developerActivity.svg'; // Correct import path
+// import developerActivity from '../../../public/images/developerActivity.svg'; 
+import WorkImg from '../../../public/images/workimg.svg'
 import { skillsSection } from "@/Editme";
 import SoftwareSkill from "@/components/softwareSkills/SoftwareSkill";
 
@@ -14,7 +15,7 @@ export default function Skills() {
       <div className="skills-main-div">
         <Fade duration={1000}>
           <div className="skills-image-div">
-            <Image alt="Saad Working" src={developerActivity} layout="intrinsic" width={500} height={500} />
+            <Image alt="Sunil Working" src={WorkImg} layout="intrinsic" width={500} height={500} />
           </div>
         </Fade>
         <Fade duration={1000}>

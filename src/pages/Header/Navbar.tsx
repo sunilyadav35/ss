@@ -4,15 +4,14 @@ import React from "react";
 import Headroom from "react-headroom";
 import "./Header.css";
 import { TopMenu, greeting } from "@/Editme";
+import SparklesText from "@/components/ui/sparkal-text";
 
 function Header() {
   return (
     <Headroom>
       <header className="header">
-        <a href="/" className="logo">
-          <span className="grey-color"> &lt;</span>
-          <span className="logo-name">{greeting.username}</span>
-          <span className="grey-color">/&gt;</span>
+        <a href="/" className="logo"> 
+          <SparklesText text={greeting.username}  />
         </a>
         <input className="menu-btn" type="checkbox" id="menu-btn" />
         <label className="menu-icon" htmlFor="menu-btn">

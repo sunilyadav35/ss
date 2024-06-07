@@ -1,14 +1,10 @@
-/* Change this file to get your personal Portfolio */
 
-// Your Summary And Greeting Section
 
 import emoji from "react-easy-emoji";
 
 const TopMenu = [
   {id: '#skills', name: 'Skills'},
-  // remove experience if you are fresher
   {id: '#experience', name: 'Work Experiences'},
-  // {id: '#blog', name: 'Blog'},
   {id: '#projects', name: 'Projects'},
   {id: '#opensource', name: 'Open Source'},
   {id: '#tools', name: 'Tools'},
@@ -17,17 +13,15 @@ const TopMenu = [
 ]
 
 const greeting = {
-  /* Your Summary And Greeting Section */
   username: "Sunil",
   title: "Hi all, I'm Sunil",
-  subTitle: emoji("A passionate Software Developer 🚀 having an experience of building Web applications with JavaScript / Reactjs / Nodejs / Django and some other cool libraries and frameworks."),
+  subTitle: emoji("A passionate Software Developer having an experience of building Web applications with JavaScript / Reactjs / Nodejs / Django and some other cool libraries and frameworks."),
   resumeLink: "https://drive.google.com/file/d/1IB8BTAeFSCuc3VLKU9YTxSQScO9OCLEt/view?usp=sharing"
 };
 
-// setting title
+
 document.title = `${greeting.username} Portfolio`
 
-// Your Social Media Link
 
 const socialMediaLinks = {
 
@@ -41,20 +35,18 @@ Twitter: 'dss',
 
 };
 
-// Your Skills Section
+
 
 const skillsSection = {
   title: "What i do",
   subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
-    // emoji("⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"),
     emoji("⚡ Develop interactive Front end / User Interfaces for your web"),
     emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
     emoji("⚡ Develop robust backend and REST API with Django | NodeJS")
   ],
 
-  /* Make Sure You include correct Font Awesome Classname to view your icon
-  https://fontawesome.com/icons?d=gallery */
+
 
   softwareSkills: [
     {
@@ -70,16 +62,8 @@ const skillsSection = {
       fontAwesomeClassname: "fab fa-js"
     },
     {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
       skillName: "reactjs",
       fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "Django",
-      fontAwesomeClassname: "fab fa-python"
     },
     {
       skillName: "sql-database",
@@ -97,29 +81,22 @@ const skillsSection = {
       skillName: "sass",
       fontAwesomeClassname: "fab fa-sass"
     },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    }
+   
   ]
 };
 
-// Your top 3 proficient stacks/tech experience
+
 
 const techStack = {
-  viewSkillBars: false, //Set it to true to show Proficiency Section
+  viewSkillBars: false, 
   experience: [
     {
       Stack: "Backend",
       progressPercentage: "80%"
     },
     {
-      Stack: "Frontend/Design",  //Insert stack or technology you have experience in
-      progressPercentage: "75%"  //Insert relative proficiency in percentage
+      Stack: "Frontend/Design",  
+      progressPercentage: "75%" 
     },
     {
       Stack: "Programming",
@@ -129,15 +106,14 @@ const techStack = {
 };
 
 
-// Your top 3 work experiences | uncomment below items if you have more exp
+
 
 const workExperiences = {
-  viewExperiences: true, //Set it to true to show workExperiences Section
+  viewExperiences: true, 
   experience: [
     {
       role: "Full Stack Developer",
       company: "Ezedox",
-    //   companylogo: require("./assets/images/ezedox.png"),
       date: "June 2019 – October 2020",
       desc: "Working on ReactJS | Redux | Django | Django-rest-framwork to develop UI and REST API with our awsome team",
       descBullets: [
@@ -150,7 +126,6 @@ const workExperiences = {
     {
       role: "Assistant Software Developer",   
       company: "Firecompass",
-    //   companylogo: require("./assets/images/fc.png"),
       date: "October 2020 – Present",
       desc: "Working on ReactJS | Redux | Django | FastAPI | Dockers | Many more ...",
       descBullets: [
@@ -165,12 +140,11 @@ const workExperiences = {
 };
 
 
-/* Your Open Source Section to View Your Github Pinned Projects
-To know how to get github key look at readme.md */
+
 const openSource = {
   githubConvertedToken: process.env.REACT_APP_GITHUB_TOKEN,
-  githubUserName: "rayvikram", // Change to your github username to view your profile in Contact Section.
-  showGithubProfile: "true" // Set true or false to show Contact profile using Github, defaults to false 
+  githubUserName: "rayvikram", 
+  showGithubProfile: "true" 
 };
 
 
@@ -182,7 +156,7 @@ const bigProjectSection = {
     {
       title: "MyTournament",
       subtitle: "Gaming Event Webapp where user can organize and join Gaming Events",
-      // image: require("./assets/images/codeInLogo.webp"),
+      
       footerLink: [
         { name: "Website", url: "http://mytournament.tk/" },
         { name: "GitHub", url: "https://github.com/rayvikram/mytournament-frontend" },
@@ -199,7 +173,6 @@ const bigProjectSection = {
     {
       title: "LetStylus",
       subtitle: "Ecommerce",
-      // image: require("./assets/images/codeInLogo.webp"),
       footerLink: [
         { name: "Website", url: "https://letstylus.com/" },
       ]
@@ -217,7 +190,6 @@ const toolsSection = {
     {
       title: "GitHub Visualizer",
       subtitle: "View all details of a GitHub profile in one place",
-      // image: require("./assets/images/googleAssistantLogo.webp"),
       footerLink: [
         { name: "Website", url: "https://rayvikram.github.io/github-visualizer/" },
         { name: "GitHub", url: "https://github.com/rayvikram/github-visualizer" },
@@ -261,7 +233,6 @@ const achievementSection = {
     {
       title: "CS50: CS50's Introduction to Computer Science",
       subtitle: "An introduction to the intellectual enterprises of computer science and the art of programming from EDX",
-      // image: require("./assets/images/codeInLogo.webp"),
       footerLink: [
         { name: "Certification", url: "https://courses.edx.org/certificates/8a3056693e2e46e38ccc341cefeda798" },
       ]
@@ -269,7 +240,6 @@ const achievementSection = {
     {
       title: "The Complete 2020 Web Development Bootcamp",
       subtitle: "A 50+ hours of Udemy course that is focused on HTML, CSS, Javascript, Node, React, MongoDB and more!",
-      // image: require("./assets/images/codeInLogo.webp"),
       footerLink: [
         { name: "Certification", url: "https://www.udemy.com/certificate/UC-FPNPPZ7J/" },
       ]
@@ -277,7 +247,7 @@ const achievementSection = {
     {
       title: "React Certification",
       subtitle: "It covers topics like Basic Routing, Rendering Elements,State Management (Internal Component State), Handling Events, ES6 and JavaScript and Form Validation.",
-      // image: require("./assets/images/codeInLogo.webp"),
+      
       footerLink: [
         { name: "Certification", url: "" },
       ]
@@ -286,25 +256,7 @@ const achievementSection = {
 };
 
 
-// Blogs Section | Uncomment if you want to have a blog here
-const blogSection = {
 
-  // title: "Blogs",
-  // subtitle: "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-
-  // blogs: [
-  //   {
-  //     url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-  //     title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
-  //     description: "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
-  //   },
-  //   {
-  //     url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-  //     title: "Why REACT is The Best?",
-  //     description: "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
-  //   }
-  // ]
-};
 
 // NOTE: set your profile pic, bio, location on github to reflect on portfolio
 const contactInfo = {
@@ -317,6 +269,6 @@ const contactInfo = {
 
 export {
   greeting, socialMediaLinks, skillsSection, techStack,
-  workExperiences, openSource, achievementSection, blogSection,
+  workExperiences, openSource, achievementSection,
   contactInfo, toolsSection, bigProjectSection, TopMenu
 };

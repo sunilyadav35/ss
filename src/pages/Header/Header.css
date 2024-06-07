@@ -1,4 +1,11 @@
 /* header */
+@font-face {
+  font-family: 'Grafity';
+  src: url('/fonts/Grafity.woff2') format('woff2'),
+       url('/fonts/Grafity.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
 .header {
     background-color: #fff;
@@ -38,7 +45,7 @@
     line-height: normal;
   }
   .header .logo-name {
-    font-family: "Agustina Regular";
+    font-family: 'Grafity', sans-serif;
     font-weight: bold;
     font-variant-ligatures: no-common-ligatures;
     -webkit-font-variant-ligatures: no-common-ligatures;
