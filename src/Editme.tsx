@@ -20,7 +20,7 @@ const greeting = {
 };
 
 
-document.title = `${greeting.username} Portfolio`
+// document.title = `${greeting.username} Portfolio`
 
 
 const socialMediaLinks = {

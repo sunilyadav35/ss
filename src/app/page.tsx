@@ -1,18 +1,16 @@
-
+import Sidebar from "@/components/sidebar/sidebar";
 import AboutMe from "@/components/ui/About";
-import Sidebar from "@/components/ui/Sidebar";
+import MainContent from "@/components/ui/MainContain";
+import { Education } from "@/pages/Education/Education";
 import Navbar from "@/pages/Header/Navbar";
 import Greeting from "@/pages/Hero/Hero";
+import Resume from "@/pages/resume/resume";
 import Skills from "@/pages/skills/Skills";
+
 export default function Index() {
   return (
-    <main>
-      <Navbar/>
-      <Greeting />
-      <Skills />
-      {/* <Sidebar/> */}
-      <AboutMe/>
-      {/* <Projects/> */}
+    <main className="flex justify-center">
+     <MainContent/>
     </main>
   );
 }

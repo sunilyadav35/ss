@@ -1,4 +1,4 @@
-// components/Sidebar.js
+
 const Sidebar = () => {
     return (
       <div className="flex flex-col items-center space-y-4 fixed top-1/4 left-0 p-4 bg-gray-800 rounded-r-lg">
